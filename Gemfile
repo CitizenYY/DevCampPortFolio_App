@@ -12,8 +12,8 @@ gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'coffee-rails', '~> 4.2'
 gem 'faker', '~> 1.9', '>= 1.9.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'jbuilder', '~> 2.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
