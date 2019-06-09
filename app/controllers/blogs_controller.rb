@@ -11,7 +11,9 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1
   # GET /blogs/1.json
-  def show; end
+  def show
+    # @blog = Blog.find(params[:id])
+  end
 
   # GET /blogs/new
   def new
@@ -29,10 +31,10 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
+        # format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
+        # format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -43,10 +45,10 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
-        format.json { render :show, status: :ok, location: @blog }
+        # format.json { render :show, status: :ok, location: @blog }
       else
         format.html { render :edit }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
+        # format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,8 +58,8 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html { redirect_to blogs_url, notice: 'Blog post was successfully deleted.' }
+      # format.json { head :no_content }
     end
   end
 
