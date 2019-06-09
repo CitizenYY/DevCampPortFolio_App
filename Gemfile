@@ -51,6 +51,7 @@ end
 group :development do
   gem 'annotate', '~> 2.7', '>= 2.7.5', require: false
   gem 'guard', '~> 2.15'
+  gem 'guard-rubocop', '~> 1.3'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop', '~> 0.71.0', require: false
