@@ -31,8 +31,7 @@ puts "5 skills created."
     title: "Portfolio title: #{portfolio_item}",
     subtitle: "My great service",
     body: "THP-Next, Greeny ZeroWaste, Créeons la Coop",
-    main_image: "https://via.placeholder.com/300",
-    thumb_image: "https://via.placeholder.com/150"
+    main_image: "https://via.placeholder.com/300"
   )
 end
 
