@@ -34,5 +34,6 @@ puts "5 skills created."
     main_image: "https://via.placeholder.com/300",
     thumb_image: "https://via.placeholder.com/150"
   )
+end
 
 puts "9 portfolio items created."
