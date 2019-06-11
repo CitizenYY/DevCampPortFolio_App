@@ -2,12 +2,13 @@
 
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :portfolios
+  resources :portfolios, except: [:show]
   resources :blogs
   # get 'pages/home'
   # get 'azerty', to: 'pages#about'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   root to: 'pages#home'
 end
