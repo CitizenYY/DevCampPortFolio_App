@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get :toggle_status
     end
   end
+
   # get 'pages/home'
   # get 'azerty', to: 'pages#about'
   get 'about-me', to: 'pages#about'
