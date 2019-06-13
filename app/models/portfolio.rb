@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Portfolio < ApplicationRecord
-  validates_presence_of :title, :subtitle, :body, :main_image
+  validates :title, :subtitle, :body, :main_image, presence: true
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 
   def self.vuejs
@@ -14,5 +14,4 @@ class Portfolio < ApplicationRecord
     self.main_image ||= "http://placehold.it/600x400"
     self.thumb_image ||= "http://placehold.it/350x200"
   end
-end
 end
