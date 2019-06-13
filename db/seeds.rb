@@ -46,7 +46,7 @@ end
 1.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
-    subtitle: "Vue JS",
+    subtitle: "VueJS",
     body: "THP-Next, Greeny ZeroWaste, Créeons la Coop",
     main_image: "https://via.placeholder.com/300"
   )
