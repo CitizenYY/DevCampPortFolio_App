@@ -1,8 +1,9 @@
-# frozen_string_literal: true
+module DeviseWhitelist
+  extend ActiveSupport::Concern
 
-class ApplicationController < ActionController::Base
-  include DeviseWhitelist
-  before_filter :configure_permitted_parameters, if: :devise_controller?
+  included do
+    before_filter :configure_permitted_parameters, if: :devise_controller?
+  end
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
