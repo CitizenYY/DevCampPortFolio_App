@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   include DeviseWhitelist
   include SetSource
 
-  before_filter :configure_permitted_parameters, if: :devise_controller?
+  before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :set_source
 
   def configure_permitted_parameters

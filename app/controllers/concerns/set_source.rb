@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module SetSource
   extend ActiveSupport::Concern
 
   included do
-    before_filter :set_source
+    before_action :set_source
   end
 
   def set_source
